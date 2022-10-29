@@ -5,6 +5,7 @@
 :set smartindent
 :set hlsearch
 :set incsearch
+:bel terminal
 autocmd VimEnter * NERDTree
 
 au FileType c,cpp,hpp,h,rs call rainbow#load()
