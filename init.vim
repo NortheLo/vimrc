@@ -5,8 +5,9 @@
 :set smartindent
 :set hlsearch
 :set incsearch
+autocmd VimEnter * NERDTree
 
-au FileType c,cpp,hpp,h call rainbow#load()
+au FileType c,cpp,hpp,h,rs call rainbow#load()
 
 :nmap <F8> :TagbarToggle<CR>
 autocmd CursorHold * silent call CocActionAsync('highlight')
