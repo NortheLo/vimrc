@@ -6,7 +6,7 @@
 :set hlsearch
 :set incsearch
 
-autocmd VimEnter * NERDTree
+autocmd VimEnter * Explore
 
 au FileType c,cpp,hpp,h,rs call rainbow#load()
 
