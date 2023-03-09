@@ -75,4 +75,8 @@ Plug 'preservim/NERDTree'
 
 Plug 'frazrepo/vim-rainbow'
 
+Plug 'wbthomason/packer.nvim'
+
+Plug 'neovim/nvim-lspconfig'
+
 call plug#end()
