@@ -1,0 +1,47 @@
+{
+"languageserver": {
+  "clangd": {
+    "command": "clangd",
+    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp", "h", "hpp"]
+  }
+},
+
+"languageserver": {
+  "cmake": {
+    "command": "cmake-language-server",
+    "filetypes": ["cmake"],
+    "rootPatterns": [
+      "build/"
+    ],
+    "initializationOptions": {
+      "buildDirectory": "build"
+    }
+  }
+},
+
+"languageserver": {
+  "rust": {
+    "command": "rust-analyzer",
+    "filetypes": ["rust"],
+    "rootPatterns": ["Cargo.toml"]
+  }
+},
+
+
+"languageserver": {
+  "fortran": {
+    "command": "fortls",
+    "filetypes": ["fortran"],
+    "rootPatterns": [".fortls", ".git/"]
+  }
+},
+
+"languageserver": {
+  "bash": {
+    "command": "bash-language-server",
+    "args": ["start"],
+    "filetypes": ["sh"]
+  }
+}
+}
