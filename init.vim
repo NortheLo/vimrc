@@ -1,6 +1,12 @@
+" Run when COC doesnt work
 ":call coc#util#install() 
+
 " disable Vi compatibility
 set  nocompatible
+
+set background=dark
+
+syntax enable
 
 set syntax
 
@@ -104,7 +110,6 @@ endfunction
 " Highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 au FileType c,cpp,hpp,h,rs call rainbow#load()
 
@@ -128,7 +133,7 @@ Plug 'wbthomason/packer.nvim'
 
 Plug 'neovim/nvim-lspconfig'
 
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
+
