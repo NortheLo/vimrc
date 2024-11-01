@@ -4,7 +4,7 @@
 " disable Vi compatibility
 set  nocompatible
 
-set background=dark
+:colorscheme vim 
 
 syntax enable
 
