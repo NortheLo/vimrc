@@ -22,6 +22,8 @@ set smartindent
 
 set showmode
 
+set relativenumber
+
 " always show status line
 set laststatus=2
 
