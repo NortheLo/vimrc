@@ -24,6 +24,10 @@ set showmode
 
 set relativenumber
 
+set path+=**
+
+set wrapscan
+
 " always show status line
 set laststatus=2
 
