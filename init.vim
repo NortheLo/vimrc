@@ -72,6 +72,11 @@ set history=100
 " Set terminal into insert mode
 autocmd TermOpen * startinsert
 
+set tabstop=4       " A tab character is 4 spaces wide
+set shiftwidth=4    " Indentation levels are 4 spaces
+set softtabstop=4   " Insert/delete 4 spaces when pressing Tab or Backspace
+set expandtab       " Use spaces instead of tab characters
+
 " use <tab> to trigger completion and navigate to the next complete item
 function! CheckBackspace() abort
   let col = col('.') - 1
@@ -142,4 +147,3 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
-
